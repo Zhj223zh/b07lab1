@@ -9,7 +9,7 @@ public class Polynomial
 	
 	public Polynomial(double[] A)
 	{
-		coef = A.clone();
+		coef = A;
 	}
 	
 	public Polynomial add(Polynomial A)
