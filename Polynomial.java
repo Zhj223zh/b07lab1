@@ -21,7 +21,7 @@ public class Polynomial
 		this.degree = B;
 	}
 
-	public Polynomial(File file) throws FileNotFoundException 
+	public Polynomial(File file) throws Exception 
 	{    
         Scanner scanner = new Scanner(file);
         String poly = scanner.nextLine();
@@ -170,7 +170,7 @@ public class Polynomial
 		return false;
 	}
 
-	public void saveToFile(String fileName) throws IOException 
+	public void saveToFile(String fileName) throws Exception 
 	{
         FileWriter writer = new FileWriter(fileName, false);
 		for(int i = 0; i < coef.length; i++)
